@@ -1,105 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
     <!--toastify-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <!--css-->
-    <link rel="stylesheet" href="sass/css/styles.css">
-</head>
+    <link rel="stylesheet" href="sass/css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <header></header>
     <main id="main">
-        <div class="background"></div>
-        <section class="contact-container">
-            <div class="contact-form">
-                <h1 class="contact-title">Contact Us</h1>
-                <form action="" id="form">
-                    <div class="contact-item-container">
-                        <input class="input" type="text" name="name" id="contact-name" placeholder=" ">
-                        <label class="label-input">Name</label>
-                        <span class="span-input"></span>
-                    </div>
-                    <div class="contact-item-container">
-                        <input class="input" type="text" name="phone" id="contact-name" placeholder=" ">
-                        <label class="label-input">Phone</label>
-                        <span class="span-input"></span>
-                    </div>
-                    <div class="contact-item-container">
-                        <input class="input" type="email" name="email" id="contact-name" placeholder=" ">
-                        <label class="label-input">Email</label>
-                        <span class="span-input"></span>
-                    </div>
-                    <div class="contact-item-container">
-                        <textarea class="input textarea" name="textarea" id="contact-name" placeholder=" "></textarea>
-                        <label class="label-textarea">Message</label>
-                    </div>
-                    <button class="button-contact" id="button-contact" type="submit">
-                        <div class="bg"></div>
-                        <div class="bg bg2"></div>
-                        <div class="bg bg3"></div>
-                        Send Message
-                    </button>
-                </form>
-                <div class="more-info" id="more-info">
-                    <ion-icon class="icon-arrow" name="chevron-forward-outline"></ion-icon>
-                    <p>More Info</p>
-                    <ion-icon class="icon-arrow" name="chevron-back-outline"></ion-icon>
-                </div>
+      <div class="background"></div>
+      <section class="contact-container">
+        <div class="contact-form">
+          <h1 class="contact-title">Contact Us</h1>
+          <form action="" id="form">
+            <div class="contact-item-container">
+              <input
+                class="input"
+                type="text"
+                name="name"
+                id="contact-name"
+                placeholder=" "
+              />
+              <label class="label-input">Name</label>
+              <span class="span-input"></span>
             </div>
-            <div class="info-contact-content" id="info-contact-content">
-                <div class="info-contact">
-                    <span class="arrow"></span>
-                    <div class="contact-info">
-                        <h2 class="info-name">Pablo Hernández</h2>
-                        <div class="info-direction">
-                            <div class="info">
-                                <ion-icon class="icon-info" name="map-outline"></ion-icon>
-                                <p class="text-info">Río Ceballos, Córdoba.</p>
-                            </div>
-                            <div class="info">
-                                <ion-icon class="icon-info" name="call-outline"></ion-icon>
-                                <p class="text-info">+54 9 3216342315</p>
-                            </div>
-                            <div class="info">
-                                <ion-icon class="icon-info" name="mail-open-outline"></ion-icon>
-                                <p class="text-info">peh_tj@hotmail.com</p>
-                            </div>
-                        </div>
-                        <div class="info-redes">
-                            <a class="redes" href="https://api.whatsapp.com/send?phone=5493516342315&text=Hola%21%20Como%20estas.?%20" target="_blank">
-                                <ion-icon class="icon-redes" name="logo-whatsapp"></ion-icon>
-                            </a>
-                            <a class="redes" href="https://www.linkedin.com/in/pablo-hern%C3%A1ndez-19234b238/" target="_blank">
-                                <ion-icon class="icon-redes" name="logo-linkedin"></ion-icon>
-                            </a>
-                            <a class="redes" href="https://github.com/Pablo220288" target="_blank">
-                                <ion-icon class="icon-redes" name="logo-github"></ion-icon>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
+            <div class="contact-item-container">
+              <input
+                class="input"
+                type="text"
+                name="phone"
+                id="contact-name"
+                placeholder=" "
+              />
+              <label class="label-input">Phone</label>
+              <span class="span-input"></span>
             </div>
-
-        </section>
+            <div class="contact-item-container">
+              <input
+                class="input"
+                type="email"
+                name="email"
+                id="contact-name"
+                placeholder=" "
+              />
+              <label class="label-input">Email</label>
+              <span class="span-input"></span>
+            </div>
+            <div class="contact-item-container">
+              <textarea
+                class="input textarea"
+                name="textarea"
+                id="contact-name"
+                placeholder=" "
+              ></textarea>
+              <label class="label-textarea">Message</label>
+            </div>
+            <button class="button-contact" id="button-contact" type="submit">
+              <div class="bg"></div>
+              <div class="bg bg2"></div>
+              <div class="bg bg3"></div>
+              Send Message
+            </button>
+          </form>
+          <div class="more-info" id="more-info">
+            <ion-icon
+              class="icon-arrow"
+              name="chevron-forward-outline"
+            ></ion-icon>
+            <p>More Info</p>
+            <ion-icon class="icon-arrow" name="chevron-back-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="info-contact-content" id="info-contact-content">
+          <div class="info-contact">
+            <span class="arrow"></span>
+            <div class="contact-info">
+              <h2 class="info-name">Pablo Hernández</h2>
+              <div class="info-direction">
+                <div class="info">
+                  <ion-icon class="icon-info" name="map-outline"></ion-icon>
+                  <p class="text-info">Río Ceballos, Córdoba.</p>
+                </div>
+                <div class="info">
+                  <ion-icon class="icon-info" name="call-outline"></ion-icon>
+                  <p class="text-info">+54 9 3216342315</p>
+                </div>
+                <div class="info">
+                  <ion-icon
+                    class="icon-info"
+                    name="mail-open-outline"
+                  ></ion-icon>
+                  <p class="text-info">peh_tj@hotmail.com</p>
+                </div>
+              </div>
+              <div class="info-redes">
+                <a
+                  class="redes"
+                  href="https://api.whatsapp.com/send?phone=5493516342315&text=Hola%21%20Como%20estas.?%20"
+                  target="_blank"
+                >
+                  <ion-icon class="icon-redes" name="logo-whatsapp"></ion-icon>
+                </a>
+                <a
+                  class="redes"
+                  href="https://www.linkedin.com/in/pablo-hern%C3%A1ndez-19234b238/"
+                  target="_blank"
+                >
+                  <ion-icon class="icon-redes" name="logo-linkedin"></ion-icon>
+                </a>
+                <a
+                  class="redes"
+                  href="https://github.com/Pablo220288"
+                  target="_blank"
+                >
+                  <ion-icon class="icon-redes" name="logo-github"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <!--sweetalert2-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!--toastify-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <!--ionic-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <!--JavaScript-->
     <script type="module" src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

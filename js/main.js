@@ -18,7 +18,6 @@ let messageToastify = (input) => {
     Toastify({
         text: `${input} Requerid`,
         className: "info",
-        position: "top-center",
         style: {
           background: "#ff0000",
         }
