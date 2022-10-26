@@ -13,17 +13,10 @@
 body {
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 body main {
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 0.4s;
   position: relative;
 }
@@ -40,35 +33,47 @@ body main .background {
   z-index: -100;
 }
 body main .contact-container {
+  width: 300px;
+  height: 500px;
   position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main .contact-container .contact-form {
   width: 300px;
   height: 500px;
   background-color: #fff;
-  border-radius: 6px;
-  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3803921569);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3803921569);
+  z-index: -1;
 }
-body main .contact-container .contact-title {
+body main .contact-container .contact-form .contact-title {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-body main .contact-container form {
+body main .contact-container .contact-form form {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-body main .contact-container form .contact-item-container {
+body main .contact-container .contact-form form .contact-item-container {
   width: 80%;
   margin: auto;
   position: relative;
 }
-body main .contact-container form .contact-item-container .input {
+body main .contact-container .contact-form form .contact-item-container .input {
   position: relative;
   width: 100%;
   outline: none;
@@ -79,18 +84,18 @@ body main .contact-container form .contact-item-container .input {
   padding: 5px;
   transition: 0.4s;
 }
-body main .contact-container form .contact-item-container .input:focus + .label-input {
+body main .contact-container .contact-form form .contact-item-container .input:focus + .label-input {
   bottom: 30px;
   left: 0;
   font-size: 0.7rem;
 }
-body main .contact-container form .contact-item-container .label-input {
+body main .contact-container .contact-form form .contact-item-container .label-input {
   position: absolute;
   bottom: 5px;
   left: 5px;
   transition: 0.4s;
 }
-body main .contact-container form .contact-item-container .span-input {
+body main .contact-container .contact-form form .contact-item-container .span-input {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -100,55 +105,42 @@ body main .contact-container form .contact-item-container .span-input {
   z-index: 1;
   transition: 0.4s;
 }
-body main .contact-container form .contact-item-container:hover .span-input {
+body main .contact-container .contact-form form .contact-item-container:hover .span-input {
   width: 100%;
 }
-body main .contact-container form .contact-item-container .input:focus {
+body main .contact-container .contact-form form .contact-item-container .input:focus {
   border-bottom: 2px solid #176dde;
 }
-body main .contact-container form .contact-item-container .input:not(:placeholder-shown).input:not(:focus) {
+body main .contact-container .contact-form form .contact-item-container .input:not(:placeholder-shown).input:not(:focus) {
   border-bottom: 2px solid #176dde;
 }
-body main .contact-container form .contact-item-container .input:not(:placeholder-shown).input:not(:focus) + .label-input {
+body main .contact-container .contact-form form .contact-item-container .input:not(:placeholder-shown).input:not(:focus) + .label-input {
   bottom: 30px;
   left: 0;
   font-size: 0.7rem;
 }
-body main .contact-container form .contact-item-container .textarea {
+body main .contact-container .contact-form form .contact-item-container .textarea {
   resize: vertical;
   min-height: 100px;
   max-height: 150px;
 }
-body main .contact-container form .contact-item-container .label-textarea {
+body main .contact-container .contact-form form .contact-item-container .label-textarea {
   position: absolute;
   top: 5px;
   left: 5px;
   transition: 0.4s;
 }
-body main .contact-container form .contact-item-container .span-input-textarea {
-  position: absolute;
-  bottom: 1px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #176dde;
-  z-index: 1;
-  transition: 0.4s;
-}
-body main .contact-container form .contact-item-container:hover .span-input-textarea {
-  width: 100%;
-}
-body main .contact-container form .contact-item-container .textarea:focus + .label-textarea {
+body main .contact-container .contact-form form .contact-item-container .textarea:focus + .label-textarea {
   top: -15px;
   left: 0;
   font-size: 0.7rem;
 }
-body main .contact-container form .contact-item-container .textarea:not(:placeholder-shown).textarea:not(:focus) + .label-textarea {
+body main .contact-container .contact-form form .contact-item-container .textarea:not(:placeholder-shown).textarea:not(:focus) + .label-textarea {
   top: -15px;
   left: 0;
   font-size: 0.7rem;
 }
-body main .contact-container form .button-contact {
+body main .contact-container .contact-form form .button-contact {
   width: 70%;
   margin: auto;
   margin-top: 10px;
@@ -166,7 +158,7 @@ body main .contact-container form .button-contact {
   box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.215);
   cursor: pointer;
 }
-body main .contact-container form .button-contact .bg {
+body main .contact-container .contact-form form .button-contact .bg {
   animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #43afff 50%, #ab06ff 50%);
   bottom: 0;
@@ -177,20 +169,20 @@ body main .contact-container form .button-contact .bg {
   top: 0;
   z-index: -1;
 }
-body main .contact-container form .button-contact .bg2 {
+body main .contact-container .contact-form form .button-contact .bg2 {
   position: absolute;
   animation-direction: alternate-reverse;
   animation-duration: 4s;
 }
-body main .contact-container form .button-contact .bg3 {
+body main .contact-container .contact-form form .button-contact .bg3 {
   position: absolute;
   animation-duration: 5s;
 }
-body main .contact-container form .button-contact:hover {
+body main .contact-container .contact-form form .button-contact:hover {
   transform: scale(0.97);
   transition: all 500ms ease-out;
 }
-body main .contact-container .more-info {
+body main .contact-container .contact-form .more-info {
   position: absolute;
   bottom: 5px;
   font-size: 0.7rem;
@@ -200,20 +192,22 @@ body main .contact-container .more-info {
   animation: moveGap 0.8s linear infinite;
   cursor: pointer;
 }
-body main .contact-container .more-info:hover + .info-contact-content {
+body main .contact-container .contact-form .more-info:hover + .info-contact-content {
   bottom: -15px;
 }
-body main .contact-container .more-info .icon-arrow {
+body main .contact-container .contact-form .more-info .icon-arrow {
   font-size: 1rem;
   color: #000;
 }
 body main .contact-container .info-contact-content {
   position: absolute;
-  bottom: -5px;
-  width: 90%;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 270px;
   height: 300px;
   box-shadow: -5px 0px 15px 5px rgba(0, 0, 0, 0.3803921569);
-  z-index: -1;
+  z-index: -2;
   transition: 0.4s;
 }
 body main .contact-container .info-contact-content .info-contact {
@@ -304,7 +298,7 @@ body main .contact-container .info-contact-content .info-contact .contact-info .
 }
 
 .info-open {
-  bottom: -299px !important;
+  bottom: -290px !important;
 }
 
 .main-open {
@@ -328,14 +322,13 @@ body main .contact-container .info-contact-content .info-contact .contact-info .
   }
 }
 @media (min-width: 700px) {
-  body main .contact-container .more-info:hover + .info-contact-content {
+  body main .contact-container .contact-form .more-info:hover + .info-contact-content {
     bottom: 100px;
-    right: -15px;
+    left: 65%;
   }
   body main .contact-container .info-contact-content {
-    background: transparent;
     bottom: 100px;
-    right: -5px;
+    left: 60%;
     transition: 0.4s 0.3s;
   }
   body main .contact-container .info-contact-content .info-contact .arrow {
@@ -350,7 +343,8 @@ body main .contact-container .info-contact-content .info-contact .contact-info .
   }
   .info-open {
     bottom: 100px !important;
-    right: -260px !important;
+    left: 140% !important;
+    pointer-events: inherit;
   }
   .main-open {
     padding-right: 270px;
