@@ -25,8 +25,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
         transition: 0.4s;
+        position: relative;
         .background {
             position: fixed;
             top: 0;
@@ -58,6 +58,7 @@ body {
             }
     
             form {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
@@ -232,7 +233,7 @@ body {
                 bottom: -5px;
                 width: 90%;
                 height: 300px;
-                box-shadow: 0px 0px 15px 5px #00000061;
+                box-shadow: -5px 0px 15px 5px #00000061;
                 z-index: -1;
                 transition: 0.4s;
     
